@@ -27,84 +27,121 @@ html {
     display:flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    min-width: 100vh;
     
 }
 .card{
-    display:flex;
-    flex-direction: column;
+    
+    max-width: 30rem;
+    padding: 2rem;
     background-color:  var(--Very-dark-blue-card-BG);
-    max-width: 20%;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
-    margin: 13rem 26rem;
+   
     
 }
-.main-image{
-    max-width: 90%;
-    margin: 1.8rem;
+.main-image img{
+    max-width: 100%;
     border-radius: 5px;
-    margin: 2rem 4rem;
+    
   
 }
 
-.heading{
-    
+.main-image a{
+    text-decoration: none;
+}
 
+
+.heading h3{
+    
+    display: inline-block;
     font-size: 1.8rem;
-    color: var(--White);
+    color: var(--Cyan);
     font-family: "Outfit";
-    max-width: 90%;
     font-weight: 600;
-    margin: 2rem 4rem;
-   
 
 }
+
+.heading a{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: "Outfit";
+    color: var(--Cyan);
+    text-decoration: none;
+    margin: 2rem 0 1rem;
+}
 .desc{
+    display: inline-block;
     color: var(--Soft-blue);
     font-size: 1.5rem;
     font-family: "Outfit";
-    
-    max-width: 90%;
-    margin: 2rem 4rem;
-    
+    margin: 1rem 0;
 }
-.info-row{
-    display:flex;
-    max-width: 100%;
+
+.things{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
 }
+
 .quantity{
+    display: inline-block;
  color: var(--Cyan);
  font-size: 1.2rem;
  font-family: "Outfit";
- max-width: 50%;
- margin-right: auto;
+
+}
+.quantity img{
+    
+    width: 1rem;
+   
 }
 .time{
-    color: var(--Cyan);
+    display: inline-block;
+ color: var(--Cyan);
  font-size: 1.2rem;
  font-family: "Outfit";
- max-width: 50%;
- margin-left: auto;
+
+}
+
+.time img{
+   
+    width: 1rem; 
+   
 }
 
 hr {
     
     flex-grow: 1;
-    /* width: 100%; */ /* or this */
-    border-top: 1px solid var(--Very-dark-blue-line);
-    width: 80%;
-    margin:1rem 3rem;
-    justify-content: center;
+    border: 0.5px solid var(--Very-dark-blue-line);
+   
+  }
+  .creator {
+    /* margin-top: 2rem; */
+    display: flex;
     align-items: center;
+   
   }
-  .creator{
+  .creator img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .creator-name{
+    display: flex;
+    margin: 2rem 0 1rem 2rem;
+    justify-content: space-between
+  }
+  .creator-name p{
     color: var(--Soft-blue);
-    font-size: 1.5rem;
-    font-family: "Outfit";
-    margin-top: 2rem;
+ font-size: 1.5rem;
+ font-family: "Outfit";
+ padding-right: 0.5rem;
   }
-  .creator img{
-    margin-right: 2rem;
+  .creator-name a{
+    color: var(--Cyan);
+ font-size: 1.5rem;
+ font-family: "Outfit";
+ text-decoration: none;
+
   }
+
+  
